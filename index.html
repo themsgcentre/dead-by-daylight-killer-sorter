@@ -45,7 +45,8 @@ var namMember = new Array(
 "dredge",
 "wesker",
 "the knight",
-"the skull merchant"
+"the skull merchant",
+"the singularity"
 );
  
  
@@ -571,6 +572,12 @@ function showImage() {
             //document.getElementById("leftField").style.backgroundImage = "url(\"res/skullmerchant.png\")";
             break;
         }
+        case "the singularity": {
+            //document.getElementById("leftField").innerHTML = "<img id=\"skullmerchant_png\" alt=\"the skull merchant\" src=\"res/skullmerchant.png\" width=\"300px\" height=\"350px\">";
+            document.getElementById("leftField").innerHTML = "<div class='img-area'> <img src='res/single-hover.png' alt='singularity' class='img-back'><img src='res/single.png' alt='singularity' class='img-front'></div>"
+            //document.getElementById("leftField").style.backgroundImage = "url(\"res/skullmerchant.png\")";
+            break;
+        }
 
 
     }
@@ -759,6 +766,12 @@ function showImage() {
         case "the skull merchant": {
             //document.getElementById("leftField").innerHTML = "<img id=\"skullmerchant_png\" alt=\"the skull merchant\" src=\"res/skullmerchant.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("rightField").innerHTML = "<div class='img-area'> <img src='res/skullmerchant-hover.png' alt='skullmerchant' class='img-back'><img src='res/skullmerchant.png' alt='skullmerchant' class='img-front'></div>"
+            //document.getElementById("leftField").style.backgroundImage = "url(\"res/skullmerchant.png\")";
+            break;
+        }
+        case "the singularity": {
+            //document.getElementById("leftField").innerHTML = "<img id=\"skullmerchant_png\" alt=\"the skull merchant\" src=\"res/skullmerchant.png\" width=\"300px\" height=\"350px\">";
+            document.getElementById("rightField").innerHTML = "<div class='img-area'> <img src='res/single-hover.png' alt='singularity' class='img-back'><img src='res/single.png' alt='singularity' class='img-front'></div>"
             //document.getElementById("leftField").style.backgroundImage = "url(\"res/skullmerchant.png\")";
             break;
         }
