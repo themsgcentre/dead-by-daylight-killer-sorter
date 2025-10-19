@@ -521,7 +521,42 @@ function showImage() {
             document.getElementById("leftField").innerHTML = "<div class='img-area'> <img src='res/single-hover.png' alt='singularity' class='img-back'><img src='res/single.png' alt='singularity' class='img-front'></div>"
             break;
         }
-
+        case "the xenomorph": {
+            document.getElementById("leftField").innerHTML = "<div class='img-area'> <img src='res/xenomorph-hover.png' alt='xenomorph' class='img-back'><img src='res/xenomorph.png' alt='xenomorph' class='img-front'></div>"
+            break;
+        }
+        case "chucky": {
+            document.getElementById("leftField").innerHTML = "<div class='img-area'> <img src='res/chucky-hover.png' alt='chucky' class='img-back'><img src='res/chucky.png' alt='chucky' class='img-front'></div>"
+            break;
+        }
+        case "the unknown": {
+            document.getElementById("leftField").innerHTML = "<div class='img-area'> <img src='res/unknown-hover.png' alt='unknown' class='img-back'><img src='res/unknown.png' alt='unknown' class='img-front'></div>"
+            break;
+        }
+        case "vecna": {
+            document.getElementById("leftField").innerHTML = "<div class='img-area'> <img src='res/vecna-hover.png' alt='vecna' class='img-back'><img src='res/vecna.png' alt='vecna' class='img-front'></div>"
+            break;
+        }
+        case "the dark lord/dracula": {
+            document.getElementById("leftField").innerHTML = "<div class='img-area'> <img src='res/dracula-hover.png' alt='dracula' class='img-back'><img src='res/dracula.png' alt='dracula' class='img-front'></div>"
+            break;
+        }
+        case "the houndmaster": {
+            document.getElementById("leftField").innerHTML = "<div class='img-area'> <img src='res/houndmaster-hover.png' alt='houndmaster' class='img-back'><img src='res/houndmaster.png' alt='houndmaster' class='img-front'></div>"
+            break;
+        }
+        case "the ghoul": {
+            document.getElementById("leftField").innerHTML = "<div class='img-area'> <img src='res/ghoul-hover.png' alt='ghoul' class='img-back'><img src='res/ghoul.png' alt='ghoul' class='img-front'></div>"
+            break;
+        }
+        case "springtrap": {
+            document.getElementById("leftField").innerHTML = "<div class='img-area'> <img src='res/springtrap-hover.png' alt='springtrap' class='img-back'><img src='res/springtrap.png' alt='springtrap' class='img-front'></div>"
+            break;
+        }
+        case "the krasue": {
+            document.getElementById("leftField").innerHTML = "<div class='img-area'> <img src='res/krasue-hover.png' alt='krasue' class='img-back'><img src='res/krasue.png' alt='krasue' class='img-front'></div>"
+            break;
+        }
 
     }
     // right picture
@@ -655,6 +690,43 @@ function showImage() {
             break;
         }
 
+        case "the xenomorph": {
+            document.getElementById("rightField").innerHTML = "<div class='img-area'> <img src='res/xenomorph-hover.png' alt='xenomorph' class='img-back'><img src='res/xenomorph.png' alt='xenomorph' class='img-front'></div>"
+            break;
+        }
+        case "chucky": {
+            document.getElementById("rightField").innerHTML = "<div class='img-area'> <img src='res/chucky-hover.png' alt='chucky' class='img-back'><img src='res/chucky.png' alt='chucky' class='img-front'></div>"
+            break;
+        }
+        case "the unknown": {
+            document.getElementById("rightField").innerHTML = "<div class='img-area'> <img src='res/unknown-hover.png' alt='unknown' class='img-back'><img src='res/unknown.png' alt='unknown' class='img-front'></div>"
+            break;
+        }
+        case "vecna": {
+            document.getElementById("rightField").innerHTML = "<div class='img-area'> <img src='res/vecna-hover.png' alt='vecna' class='img-back'><img src='res/vecna.png' alt='vecna' class='img-front'></div>"
+            break;
+        }
+        case "the dark lord/dracula": {
+            document.getElementById("rightField").innerHTML = "<div class='img-area'> <img src='res/dracula-hover.png' alt='dracula' class='img-back'><img src='res/dracula.png' alt='dracula' class='img-front'></div>"
+            break;
+        }
+        case "the houndmaster": {
+            document.getElementById("rightField").innerHTML = "<div class='img-area'> <img src='res/houndmaster-hover.png' alt='houndmaster' class='img-back'><img src='res/houndmaster.png' alt='houndmaster' class='img-front'></div>"
+            break;
+        }
+        case "the ghoul": {
+            document.getElementById("rightField").innerHTML = "<div class='img-area'> <img src='res/ghoul-hover.png' alt='ghoul' class='img-back'><img src='res/ghoul.png' alt='ghoul' class='img-front'></div>"
+            break;
+        }
+        case "springtrap": {
+            document.getElementById("rightField").innerHTML = "<div class='img-area'> <img src='res/springtrap-hover.png' alt='springtrap' class='img-back'><img src='res/springtrap.png' alt='springtrap' class='img-front'></div>"
+            break;
+        }
+        case "the krasue": {
+            document.getElementById("rightField").innerHTML = "<div class='img-area'> <img src='res/krasue-hover.png' alt='krasue' class='img-back'><img src='res/krasue.png' alt='krasue' class='img-front'></div>"
+            break;
+        }
+
     }
 
     numQuestion++;
@@ -722,9 +794,11 @@ function toNameFace(n) {
     </tr>
     </tbody>
 </table>
-    <p class="instructions" style="font-size: 6px; color: rgb(153, 153, 153);"> 
-        <span class="warning">please note:</span> hitting 'no opinion' or 'both SHITE' frequently will negatively affect your results. hitting
-        backspace will result in all your progress being lost. please only do so if you think you made a fatal mistake.
+    <p class="instructions" style="font-size: 14px; color: rgb(153, 153, 153);"> 
+        <span class="warning">please note:</span>
+        <span>hitting 'no opinion' or 'both SHITE' frequently will negatively affect your results.</span> 
+        <span>hitting backspace will result in all your progress being lost.</span> 
+        please only do so if you think you made a fatal mistake.
     </p>
  <br> <br>
 <div id="resultField" style="text-align: center;">

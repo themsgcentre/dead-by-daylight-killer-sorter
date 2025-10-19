@@ -113,21 +113,25 @@ b {
 .instructions {
     /*text-align: justify;*/
     font-family: consolas;
-    font-size: 12px;
+    font-size: 14px;
     text-transform: uppercase;
     color: rgb(206, 206, 206);
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .note {
     font-family: consolas;
-    font-size: 7px;
+    font-size: 12px;
     text-transform: uppercase;
     color: rgb(153, 153, 153);
 } 
 
 .warning {
     font-family: consolas;
-    font-size: 6px;
+    font-size: 14px;
     text-transform: uppercase;
     color: #22ccd4;
 }
