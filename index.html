@@ -41,12 +41,17 @@ var namMember = new Array(
 "nemesis",
 "pinhead",
 "artist",
-"sadako / the onryo",
+"sadako/the onryo",
 "dredge",
 "wesker",
 "the knight",
 "the skull merchant",
-"the singularity"
+"the singularity",
+"the xenomorph",
+"chucky",
+"the unknown",
+"vecna",
+"the dark lord/dracula"
 );
  
  
@@ -70,8 +75,6 @@ function initList() {
     var n = 0;
     var mid; 
     var i;
-    
-    
     
     //The sequence that you should sort
     
@@ -387,401 +390,270 @@ function showImage() {
     // First picture
     switch (str1) {
         case "the trapper": {
-            //document.getElementById("leftField").innerHTML = "<img id=\"trapper_png\" alt=\"the trapper\" src=\"res/trapper.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("leftField").innerHTML = "<div class='img-area'> <img src='res/trapper-hover.png' alt='trapper' class='img-back'><img src='res/trapper.png' alt='trapper' class='img-front'></div>"
-            //document.getElementById("leftField").style.backgroundImage = "url(\"res/trapper.png\")";
             break;
         }
         case "the wraith": {
-            //document.getElementById("leftField").innerHTML = "<img id=\"wraith_png\" alt=\"the wraith\" src=\"res/wraith.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("leftField").innerHTML = "<div class='img-area'> <img src='res/wraith-hover.png' alt='wraith' class='img-back'><img src='res/wraith.png' alt='wraith' class='img-front'></div>"
-            //document.getElementById("leftField").style.backgroundImage = "url(\"res/wraith.png\")";
             break;
         }
         case "the hillbilly": {
-            //document.getElementById("leftField").innerHTML = "<img id=\"hillbilly_png\" alt=\"the hillbilly\" src=\"res/hillbilly.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("leftField").innerHTML = "<div class='img-area'> <img src='res/hillbilly-hover.png' alt='hillbilly' class='img-back'><img src='res/hillbilly.png' alt='hillbilly' class='img-front'></div>"
-            //document.getElementById("leftField").style.backgroundImage = "url(\"res/hillbilly.png\")";
             break;
         }
         case "the nurse": {
-            //document.getElementById("leftField").innerHTML = "<img id=\"nurse_png\" alt=\"the nurse\" src=\"res/nurse.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("leftField").innerHTML = "<div class='img-area'> <img src='res/nurse-hover.png' alt='nurse' class='img-back'><img src='res/nurse.png' alt='nurse' class='img-front'></div>"
-            //document.getElementById("leftField").style.backgroundImage = "url(\"res/nurse.png\")";
             break;
         }
         case "michael myers": {
-            //document.getElementById("leftField").innerHTML = "<img id=\"myers_png\" alt=\"michael\" src=\"res/michael.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("leftField").innerHTML = "<div class='img-area'> <img src='res/michael-hover.png' alt='michael' class='img-back'><img src='res/michael.png' alt='michael' class='img-front'></div>"
-            //document.getElementById("leftField").style.backgroundImage = "url(\"res/michael.png.png\")";
             break;
         }
         case "the hag": {
-            //document.getElementById("leftField").innerHTML = "<img id=\"hag_png\" alt=\"the hag\" src=\"res/hag.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("leftField").innerHTML = "<div class='img-area'> <img src='res/hag-hover.png' alt='hag' class='img-back'><img src='res/hag.png' alt='hag' class='img-front'></div>"
-            //document.getElementById("leftField").style.backgroundImage = "url(\"res/hag.png\")";
             break;
         }
         case "the doctor": {
-            //document.getElementById("leftField").innerHTML = "<img id=\"doctor_png\" alt=\"the doctor\" src=\"res/doctor.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("leftField").innerHTML = "<div class='img-area'> <img src='res/doctor-hover.png' alt='doctor' class='img-back'><img src='res/doctor.png' alt='doctor' class='img-front'></div>"
-            //document.getElementById("leftField").style.backgroundImage = "url(\"res/doctor.png\")";
             break;
         }
         case "the huntress": {
-            //document.getElementById("leftField").innerHTML = "<img id=\"huntress_png\" alt=\"the huntress\" src=\"res/huntress.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("leftField").innerHTML = "<div class='img-area'> <img src='res/huntress-hover.png' alt='huntress' class='img-back'><img src='res/huntress.png' alt='huntress' class='img-front'></div>"
-            //document.getElementById("leftField").style.backgroundImage = "url(\"res/huntress.png\")";
             break;
         }
         case "bubba/the cannibal": {
-            //document.getElementById("leftField").innerHTML = "<img id=\"bubba_png\" alt=\"bubba\" src=\"res/bubba.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("leftField").innerHTML = "<div class='img-area'> <img src='res/bubba-hover.png' alt='bubba' class='img-back'><img src='res/bubba.png' alt='bubba' class='img-front'></div>"
-            //document.getElementById("leftField").style.backgroundImage = "url(\"res/bubba.png\")";
             break;
         }
         case "freddy krueger/the nightmare": {
-            //document.getElementById("leftField").innerHTML = "<img id=\"freddy_png\" alt=\"freddy\" src=\"res/freddy.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("leftField").innerHTML = "<div class='img-area'> <img src='res/freddy-hover.png' alt='freddy' class='img-back'><img src='res/freddy.png' alt='freddy' class='img-front'></div>"
-            //document.getElementById("leftField").style.backgroundImage = "url(\"res/freddy.png\")";
             break;
         }
         case "the pig": {
-            //document.getElementById("leftField").innerHTML = "<img id=\"pig_png\" alt=\"the pig\" src=\"res/pig.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("leftField").innerHTML = "<div class='img-area'> <img src='res/pig-hover.png' alt='pig' class='img-back'><img src='res/pig.png' alt='pig' class='img-front'></div>"
-            //document.getElementById("leftField").style.backgroundImage = "url(\"res/pig.png\")";
             break;
         }
         case "the clown": {
-            //document.getElementById("leftField").innerHTML = "<img id=\"clown_png\" alt=\"the clown\" src=\"res/clown.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("leftField").innerHTML = "<div class='img-area'> <img src='res/clown-hover.png' alt='clown' class='img-back'><img src='res/clown.png' alt='clown' class='img-front'></div>"
-            //document.getElementById("leftField").style.backgroundImage = "url(\"res/clown.png\")";
             break;
         }
         case "the spirit": {
-            //document.getElementById("leftField").innerHTML = "<img id=\"spirit_png\" alt=\"the spirit\" src=\"res/spirit.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("leftField").innerHTML = "<div class='img-area'> <img src='res/spirit-hover.png' alt='spirit' class='img-back'><img src='res/spirit.png' alt='spirit' class='img-front'></div>"
-            //document.getElementById("leftField").style.backgroundImage = "url(\"res/spirit.png\")";
             break;
         }
         case "the legion": {
-            //document.getElementById("leftField").innerHTML = "<img id=\"legion_png\" alt=\"the legion\" src=\"res/legion.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("leftField").innerHTML = "<div class='img-area'> <img src='res/legion-hover.png' alt='legion' class='img-back'><img src='res/legion.png' alt='legion' class='img-front'></div>"
-            //document.getElementById("leftField").style.backgroundImage = "url(\"res/legion.png\")";
             break;
         }
         case "the plague": {
-            //document.getElementById("leftField").innerHTML = "<img id=\"plague_png\" alt=\"the plague\" src=\"res/plague.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("leftField").innerHTML = "<div class='img-area'> <img src='res/plague-hover.png' alt='plague' class='img-back'><img src='res/plague.png' alt='plague' class='img-front'></div>"
-            //document.getElementById("leftField").style.backgroundImage = "url(\"res/plague.png\")";
             break;
         }
         case "ghostface": {
-            //document.getElementById("leftField").innerHTML = "<img id=\"ghostface_png\" alt=\"the ghostface\" src=\"res/ghostface.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("leftField").innerHTML = "<div class='img-area'> <img src='res/ghostface-hover.png' alt='ghostface' class='img-back'><img src='res/ghostface.png' alt='ghostface' class='img-front'></div>"
-            //document.getElementById("leftField").style.backgroundImage = "url(\"res/ghostface.png\")";
             break;
         }
         case "demogorgon": {
-            //document.getElementById("leftField").innerHTML = "<img id=\"demo_png\" alt=\"the demo\" src=\"res/demo.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("leftField").innerHTML = "<div class='img-area'> <img src='res/demo-hover.png' alt='demo' class='img-back'><img src='res/demo.png' alt='demo' class='img-front'></div>"
-            //document.getElementById("leftField").style.backgroundImage = "url(\"res/demo.png\")";
             break;
         }
         case "the oni": {
-            //document.getElementById("leftField").innerHTML = "<img id=\"oni_png\" alt=\"the oni\" src=\"res/oni.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("leftField").innerHTML = "<div class='img-area'> <img src='res/oni-hover.png' alt='oni' class='img-back'><img src='res/oni.png' alt='oni' class='img-front'></div>"
-            //document.getElementById("leftField").style.backgroundImage = "url(\"res/oni.png\")";
             break;
         }
         case "the deathslinger": {
-            //document.getElementById("leftField").innerHTML = "<img id=\"deathslinger_png\" alt=\"the deathslinger\" src=\"res/deathslinger.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("leftField").innerHTML = "<div class='img-area'> <img src='res/deathslinger-hover.png' alt='deathslinger' class='img-back'><img src='res/deathslinger.png' alt='deathslinger' class='img-front'></div>"
-            //document.getElementById("leftField").style.backgroundImage = "url(\"res/deathslinger.png\")";
             break;
         }
         case "pyramid head": {
-            //document.getElementById("leftField").innerHTML = "<img id=\"pyramidhead_png\" alt=\"the pyramid head\" src=\"res/pyramidhead.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("leftField").innerHTML = "<div class='img-area'> <img src='res/pyramidhead-hover.png' alt='pyramidhead' class='img-back'><img src='res/pyramidhead.png' alt='pyramidhead' class='img-front'></div>"
-            //document.getElementById("leftField").style.backgroundImage = "url(\"res/pyramidhead.png\")";
             break;
         }
         case "blight": {
-            //document.getElementById("leftField").innerHTML = "<img id=\"blight_png\" alt=\"blight\" src=\"res/blight.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("leftField").innerHTML = "<div class='img-area'> <img src='res/blight-hover.png' alt='blight' class='img-back'><img src='res/blight.png' alt='blight' class='img-front'></div>"
-            //document.getElementById("leftField").style.backgroundImage = "url(\"res/blight.png\")";
             break;
         }
         case "the twins": {
-            //document.getElementById("leftField").innerHTML = "<img id=\"twins_png\" alt=\"the twins\" src=\"res/twins.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("leftField").innerHTML = "<div class='img-area'> <img src='res/twins-hover.png' alt='twins' class='img-back'><img src='res/twins.png' alt='twins' class='img-front'></div>"
-            //document.getElementById("leftField").style.backgroundImage = "url(\"res/twins.png\")";
             break;
         }
         case "trickster": {
-            //document.getElementById("leftField").innerHTML = "<img id=\"trickster_png\" alt=\"the trickster\" src=\"res/trickster.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("leftField").innerHTML = "<div class='img-area'> <img src='res/trickster-hover.png' alt='trickster' class='img-back'><img src='res/trickster.png' alt='trickster' class='img-front'></div>"
-            //document.getElementById("leftField").style.backgroundImage = "url(\"res/trickster.png\")";
             break;
         }
         case "nemesis": {
-            //document.getElementById("leftField").innerHTML = "<img id=\"nemesis_png\" alt=\"the nemesis\" src=\"res/nemesis.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("leftField").innerHTML = "<div class='img-area'> <img src='res/nemesis-hover.png' alt='nemesis' class='img-back'><img src='res/nemesis.png' alt='nemesis' class='img-front'></div>"
-            //document.getElementById("leftField").style.backgroundImage = "url(\"res/nemesis.png\")";
             break;
         }
         case "pinhead": {
-            //document.getElementById("leftField").innerHTML = "<img id=\"pinhead_png\" alt=\"the pinhead\" src=\"res/pinhead.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("leftField").innerHTML = "<div class='img-area'> <img src='res/pinhead-hover.png' alt='pinhead' class='img-back'><img src='res/pinhead.png' alt='pinhead' class='img-front'></div>"
-            //document.getElementById("leftField").style.backgroundImage = "url(\"res/pinhead.png\")";
             break;
         }
         case "artist": {
-            //document.getElementById("leftField").innerHTML = "<img id=\"artist_png\" alt=\"the artist\" src=\"res/artist.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("leftField").innerHTML = "<div class='img-area'> <img src='res/artist-hover.png' alt='artist' class='img-back'><img src='res/artist.png' alt='artist' class='img-front'></div>"
-            //document.getElementById("leftField").style.backgroundImage = "url(\"res/artist.png\")";
             break;
         }
-        case "sadako / the onryo": {
-            //document.getElementById("leftField").innerHTML = "<img id=\"sadako_png\" alt=\"the sadako\" src=\"res/sadako.png\" width=\"300px\" height=\"350px\">";
+        case "sadako/the onryo": {
             document.getElementById("leftField").innerHTML = "<div class='img-area'> <img src='res/sadako-hover.png' alt='sadako' class='img-back'><img src='res/sadako.png' alt='sadako' class='img-front'></div>"
-            //document.getElementById("leftField").style.backgroundImage = "url(\"res/sadako.png\")";
             break;
         }
         case "dredge": {
-            //document.getElementById("leftField").innerHTML = "<img id=\"dredge_png\" alt=\"the dredge\" src=\"res/dredge.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("leftField").innerHTML = "<div class='img-area'> <img src='res/dredge-hover.png' alt='dredge' class='img-back'><img src='res/dredge.png' alt='dredge' class='img-front'></div>"
-            //document.getElementById("leftField").style.backgroundImage = "url(\"res/dredge.png\")";
             break;
         }
         case "wesker": {
-            //document.getElementById("leftField").innerHTML = "<img id=\"wesker_png\" alt=\"wesker\" src=\"res/wesker.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("leftField").innerHTML = "<div class='img-area'> <img src='res/wesker-hover.png' alt='wesker' class='img-back'><img src='res/wesker.png' alt='wesker' class='img-front'></div>"
-            //document.getElementById("leftField").style.backgroundImage = "url(\"res/wesker.png\")";
             break;
         }
         case "the knight": {
-            //document.getElementById("leftField").innerHTML = "<img id=\"knight_png\" alt=\"the knight\" src=\"res/knight.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("leftField").innerHTML = "<div class='img-area'> <img src='res/knight-hover.png' alt='knight' class='img-back'><img src='res/knight.png' alt='knight' class='img-front'></div>"
-            //document.getElementById("leftField").style.backgroundImage = "url(\"res/knight.png\")";
             break;
         }
         case "the skull merchant": {
-            //document.getElementById("leftField").innerHTML = "<img id=\"skullmerchant_png\" alt=\"the skull merchant\" src=\"res/skullmerchant.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("leftField").innerHTML = "<div class='img-area'> <img src='res/skullmerchant-hover.png' alt='skullmerchant' class='img-back'><img src='res/skullmerchant.png' alt='skullmerchant' class='img-front'></div>"
-            //document.getElementById("leftField").style.backgroundImage = "url(\"res/skullmerchant.png\")";
             break;
         }
         case "the singularity": {
-            //document.getElementById("leftField").innerHTML = "<img id=\"skullmerchant_png\" alt=\"the skull merchant\" src=\"res/skullmerchant.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("leftField").innerHTML = "<div class='img-area'> <img src='res/single-hover.png' alt='singularity' class='img-back'><img src='res/single.png' alt='singularity' class='img-front'></div>"
-            //document.getElementById("leftField").style.backgroundImage = "url(\"res/skullmerchant.png\")";
             break;
         }
 
 
     }
-    // Second picture
+    // right picture
     switch (str2) {
         case "the trapper": {
-            //document.getElementById("rightField").innerHTML = "<img id=\"trapper_png\" alt=\"the trapper\" src=\"res/trapper.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("rightField").innerHTML = "<div class='img-area'> <img src='res/trapper-hover.png' alt='trapper' class='img-back'><img src='res/trapper.png' alt='trapper' class='img-front'></div>"
-            //document.getElementById("rightField").style.backgroundImage = "url(\"res/trapper.png\")";
             break;
         }
         case "the wraith": {
-            //document.getElementById("rightField").innerHTML = "<img id=\"wraith_png\" alt=\"the wraith\" src=\"res/wraith.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("rightField").innerHTML = "<div class='img-area'> <img src='res/wraith-hover.png' alt='wraith' class='img-back'><img src='res/wraith.png' alt='wraith' class='img-front'></div>"
-            //document.getElementById("rightField").style.backgroundImage = "url(\"res/wraith.png\")";
             break;
         }
         case "the hillbilly": {
-            //document.getElementById("rightField").innerHTML = "<img id=\"hillbilly_png\" alt=\"the hillbilly\" src=\"res/hillbilly.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("rightField").innerHTML = "<div class='img-area'> <img src='res/hillbilly-hover.png' alt='hillbilly' class='img-back'><img src='res/hillbilly.png' alt='hillbilly' class='img-front'></div>"
-            //document.getElementById("rightField").style.backgroundImage = "url(\"res/hillbilly.png\")";
             break;
         }
         case "the nurse": {
-            //document.getElementById("rightField").innerHTML = "<img id=\"nurse_png\" alt=\"the nurse\" src=\"res/nurse.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("rightField").innerHTML = "<div class='img-area'> <img src='res/nurse-hover.png' alt='nurse' class='img-back'><img src='res/nurse.png' alt='nurse' class='img-front'></div>"
-            //document.getElementById("rightField").style.backgroundImage = "url(\"res/nurse.png\")";
             break;
         }
         case "michael myers": {
-            //document.getElementById("rightField").innerHTML = "<img id=\"myers_png\" alt=\"michael\" src=\"res/michael.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("rightField").innerHTML = "<div class='img-area'> <img src='res/michael-hover.png' alt='michael' class='img-back'><img src='res/michael.png' alt='michael' class='img-front'></div>"
-            //document.getElementById("rightField").style.backgroundImage = "url(\"res/michael.png.png\")";
             break;
         }
         case "the hag": {
-            //document.getElementById("rightField").innerHTML = "<img id=\"hag_png\" alt=\"the hag\" src=\"res/hag.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("rightField").innerHTML = "<div class='img-area'> <img src='res/hag-hover.png' alt='hag' class='img-back'><img src='res/hag.png' alt='hag' class='img-front'></div>"
-            //document.getElementById("rightField").style.backgroundImage = "url(\"res/hag.png\")";
             break;
         }
         case "the doctor": {
-            //document.getElementById("rightField").innerHTML = "<img id=\"doctor_png\" alt=\"the doctor\" src=\"res/doctor.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("rightField").innerHTML = "<div class='img-area'> <img src='res/doctor-hover.png' alt='doctor' class='img-back'><img src='res/doctor.png' alt='doctor' class='img-front'></div>"
-            //document.getElementById("rightField").style.backgroundImage = "url(\"res/doctor.png\")";
             break;
         }
         case "the huntress": {
-            //document.getElementById("rightField").innerHTML = "<img id=\"huntress_png\" alt=\"the huntress\" src=\"res/huntress.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("rightField").innerHTML = "<div class='img-area'> <img src='res/huntress-hover.png' alt='huntress' class='img-back'><img src='res/huntress.png' alt='huntress' class='img-front'></div>"
-            //document.getElementById("rightField").style.backgroundImage = "url(\"res/huntress.png\")";
             break;
         }
         case "bubba/the cannibal": {
-            //document.getElementById("rightField").innerHTML = "<img id=\"bubba_png\" alt=\"bubba\" src=\"res/bubba.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("rightField").innerHTML = "<div class='img-area'> <img src='res/bubba-hover.png' alt='bubba' class='img-back'><img src='res/bubba.png' alt='bubba' class='img-front'></div>"
-            //document.getElementById("rightField").style.backgroundImage = "url(\"res/bubba.png\")";
             break;
         }
         case "freddy krueger/the nightmare": {
-            //document.getElementById("rightField").innerHTML = "<img id=\"freddy_png\" alt=\"freddy\" src=\"res/freddy.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("rightField").innerHTML = "<div class='img-area'> <img src='res/freddy-hover.png' alt='freddy' class='img-back'><img src='res/freddy.png' alt='freddy' class='img-front'></div>"
-            //document.getElementById("rightField").style.backgroundImage = "url(\"res/freddy.png\")";
             break;
         }
         case "the pig": {
-            //document.getElementById("rightField").innerHTML = "<img id=\"pig_png\" alt=\"the pig\" src=\"res/pig.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("rightField").innerHTML = "<div class='img-area'> <img src='res/pig-hover.png' alt='pig' class='img-back'><img src='res/pig.png' alt='pig' class='img-front'></div>"
-            //document.getElementById("rightField").style.backgroundImage = "url(\"res/pig.png\")";
             break;
         }
         case "the clown": {
-            //document.getElementById("rightField").innerHTML = "<img id=\"clown_png\" alt=\"the clown\" src=\"res/clown.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("rightField").innerHTML = "<div class='img-area'> <img src='res/clown-hover.png' alt='clown' class='img-back'><img src='res/clown.png' alt='clown' class='img-front'></div>"
-            //document.getElementById("rightField").style.backgroundImage = "url(\"res/clown.png\")";
             break;
         }
         case "the spirit": {
-            //document.getElementById("leftField").innerHTML = "<img id=\"spirit_png\" alt=\"the spirit\" src=\"res/spirit.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("rightField").innerHTML = "<div class='img-area'> <img src='res/spirit-hover.png' alt='spirit' class='img-back'><img src='res/spirit.png' alt='spirit' class='img-front'></div>"
-            //document.getElementById("leftField").style.backgroundImage = "url(\"res/spirit.png\")";
             break;
         }
         case "the legion": {
-            //document.getElementById("leftField").innerHTML = "<img id=\"legion_png\" alt=\"the legion\" src=\"res/legion.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("rightField").innerHTML = "<div class='img-area'> <img src='res/legion-hover.png' alt='legion' class='img-back'><img src='res/legion.png' alt='legion' class='img-front'></div>"
-            //document.getElementById("leftField").style.backgroundImage = "url(\"res/legion.png\")";
             break;
         }
         case "the plague": {
-            //document.getElementById("leftField").innerHTML = "<img id=\"plague_png\" alt=\"the plague\" src=\"res/plague.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("rightField").innerHTML = "<div class='img-area'> <img src='res/plague-hover.png' alt='plague' class='img-back'><img src='res/plague.png' alt='plague' class='img-front'></div>"
-            //document.getElementById("leftField").style.backgroundImage = "url(\"res/plague.png\")";
             break;
         }
         case "ghostface": {
-            //document.getElementById("leftField").innerHTML = "<img id=\"ghostface_png\" alt=\"the ghostface\" src=\"res/ghostface.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("rightField").innerHTML = "<div class='img-area'> <img src='res/ghostface-hover.png' alt='ghostface' class='img-back'><img src='res/ghostface.png' alt='ghostface' class='img-front'></div>"
-            //document.getElementById("leftField").style.backgroundImage = "url(\"res/ghostface.png\")";
             break;
         }
         case "demogorgon": {
-            //document.getElementById("leftField").innerHTML = "<img id=\"demo_png\" alt=\"the demo\" src=\"res/demo.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("rightField").innerHTML = "<div class='img-area'> <img src='res/demo-hover.png' alt='demo' class='img-back'><img src='res/demo.png' alt='demo' class='img-front'></div>"
-            //document.getElementById("leftField").style.backgroundImage = "url(\"res/demo.png\")";
             break;
         }
         case "the oni": {
-            //document.getElementById("leftField").innerHTML = "<img id=\"oni_png\" alt=\"the oni\" src=\"res/oni.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("rightField").innerHTML = "<div class='img-area'> <img src='res/oni-hover.png' alt='oni' class='img-back'><img src='res/oni.png' alt='oni' class='img-front'></div>"
-            //document.getElementById("leftField").style.backgroundImage = "url(\"res/oni.png\")";
             break;
         }
         case "the deathslinger": {
-            //document.getElementById("leftField").innerHTML = "<img id=\"deathslinger_png\" alt=\"the deathslinger\" src=\"res/deathslinger.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("rightField").innerHTML = "<div class='img-area'> <img src='res/deathslinger-hover.png' alt='deathslinger' class='img-back'><img src='res/deathslinger.png' alt='deathslinger' class='img-front'></div>"
-            //document.getElementById("leftField").style.backgroundImage = "url(\"res/deathslinger.png\")";
             break;
         }
         case "pyramid head": {
-            //document.getElementById("leftField").innerHTML = "<img id=\"pyramidhead_png\" alt=\"the pyramid head\" src=\"res/pyramidhead.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("rightField").innerHTML = "<div class='img-area'> <img src='res/pyramidhead-hover.png' alt='pyramidhead' class='img-back'><img src='res/pyramidhead.png' alt='pyramidhead' class='img-front'></div>"
-            //document.getElementById("leftField").style.backgroundImage = "url(\"res/pyramidhead.png\")";
             break;
         }
         case "blight": {
-            //document.getElementById("leftField").innerHTML = "<img id=\"blight_png\" alt=\"blight\" src=\"res/blight.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("rightField").innerHTML = "<div class='img-area'> <img src='res/blight-hover.png' alt='blight' class='img-back'><img src='res/blight.png' alt='blight' class='img-front'></div>"
-            //document.getElementById("leftField").style.backgroundImage = "url(\"res/blight.png\")";
             break;
         }
         case "the twins": {
-            //document.getElementById("leftField").innerHTML = "<img id=\"twins_png\" alt=\"the twins\" src=\"res/twins.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("rightField").innerHTML = "<div class='img-area'> <img src='res/twins-hover.png' alt='twins' class='img-back'><img src='res/twins.png' alt='twins' class='img-front'></div>"
-            //document.getElementById("leftField").style.backgroundImage = "url(\"res/twins.png\")";
             break;
         }
         case "trickster": {
-            //document.getElementById("leftField").innerHTML = "<img id=\"trickster_png\" alt=\"the trickster\" src=\"res/trickster.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("rightField").innerHTML = "<div class='img-area'> <img src='res/trickster-hover.png' alt='trickster' class='img-back'><img src='res/trickster.png' alt='trickster' class='img-front'></div>"
-            //document.getElementById("leftField").style.backgroundImage = "url(\"res/trickster.png\")";
             break;
         }
         case "nemesis": {
-            //document.getElementById("leftField").innerHTML = "<img id=\"nemesis_png\" alt=\"the nemesis\" src=\"res/nemesis.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("rightField").innerHTML = "<div class='img-area'> <img src='res/nemesis-hover.png' alt='nemesis' class='img-back'><img src='res/nemesis.png' alt='nemesis' class='img-front'></div>"
-            //document.getElementById("leftField").style.backgroundImage = "url(\"res/nemesis.png\")";
             break;
         }
         case "pinhead": {
-            //document.getElementById("leftField").innerHTML = "<img id=\"pinhead_png\" alt=\"the pinhead\" src=\"res/pinhead.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("rightField").innerHTML = "<div class='img-area'> <img src='res/pinhead-hover.png' alt='pinhead' class='img-back'><img src='res/pinhead.png' alt='pinhead' class='img-front'></div>"
-            //document.getElementById("leftField").style.backgroundImage = "url(\"res/pinhead.png\")";
             break;
         }
         case "artist": {
-            //document.getElementById("leftField").innerHTML = "<img id=\"artist_png\" alt=\"the artist\" src=\"res/artist.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("rightField").innerHTML = "<div class='img-area'> <img src='res/artist-hover.png' alt='artist' class='img-back'><img src='res/artist.png' alt='artist' class='img-front'></div>"
-            //document.getElementById("leftField").style.backgroundImage = "url(\"res/artist.png\")";
             break;
         }
-        case "sadako / the onryo": {
-            //document.getElementById("leftField").innerHTML = "<img id=\"sadako_png\" alt=\"the sadako\" src=\"res/sadako.png\" width=\"300px\" height=\"350px\">";
+        case "sadako/the onryo": {
             document.getElementById("rightField").innerHTML = "<div class='img-area'> <img src='res/sadako-hover.png' alt='sadako' class='img-back'><img src='res/sadako.png' alt='sadako' class='img-front'></div>"
-            //document.getElementById("leftField").style.backgroundImage = "url(\"res/sadako.png\")";
             break;
         }
         case "dredge": {
-            //document.getElementById("leftField").innerHTML = "<img id=\"dredge_png\" alt=\"the dredge\" src=\"res/dredge.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("rightField").innerHTML = "<div class='img-area'> <img src='res/dredge-hover.png' alt='dredge' class='img-back'><img src='res/dredge.png' alt='dredge' class='img-front'></div>"
-            //document.getElementById("leftField").style.backgroundImage = "url(\"res/dredge.png\")";
             break;
         }
         case "wesker": {
-            //document.getElementById("leftField").innerHTML = "<img id=\"wesker_png\" alt=\"wesker\" src=\"res/wesker.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("rightField").innerHTML = "<div class='img-area'> <img src='res/wesker-hover.png' alt='wesker' class='img-back'><img src='res/wesker.png' alt='wesker' class='img-front'></div>"
-            //document.getElementById("leftField").style.backgroundImage = "url(\"res/wesker.png\")";
             break;
         }
         case "the knight": {
-            //document.getElementById("leftField").innerHTML = "<img id=\"knight_png\" alt=\"the knight\" src=\"res/knight.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("rightField").innerHTML = "<div class='img-area'> <img src='res/knight-hover.png' alt='knight' class='img-back'><img src='res/knight.png' alt='knight' class='img-front'></div>"
-            //document.getElementById("leftField").style.backgroundImage = "url(\"res/knight.png\")";
             break;
         }
         case "the skull merchant": {
-            //document.getElementById("leftField").innerHTML = "<img id=\"skullmerchant_png\" alt=\"the skull merchant\" src=\"res/skullmerchant.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("rightField").innerHTML = "<div class='img-area'> <img src='res/skullmerchant-hover.png' alt='skullmerchant' class='img-back'><img src='res/skullmerchant.png' alt='skullmerchant' class='img-front'></div>"
-            //document.getElementById("leftField").style.backgroundImage = "url(\"res/skullmerchant.png\")";
             break;
         }
         case "the singularity": {
-            //document.getElementById("leftField").innerHTML = "<img id=\"skullmerchant_png\" alt=\"the skull merchant\" src=\"res/skullmerchant.png\" width=\"300px\" height=\"350px\">";
             document.getElementById("rightField").innerHTML = "<div class='img-area'> <img src='res/single-hover.png' alt='singularity' class='img-back'><img src='res/single.png' alt='singularity' class='img-front'></div>"
-            //document.getElementById("leftField").style.backgroundImage = "url(\"res/skullmerchant.png\")";
             break;
         }
 
 
     }
 
-    //document.getElementById("leftField").innerHTML = "<img src=\"res/trapper.png\" width=\"300px\" height=\"350px\">"; 
-    //document.getElementById("leftField").innerHTML = str1; 
-    //document.getElementById("rightField").innerHTML = str2;
     numQuestion++;
     
 }
